@@ -1,0 +1,4 @@
+interface:
+  display_name: "反方教练"
+  short_description: "Route to the right adversarial review"
+  default_prompt: "Use $anti-bias-coach to pressure-test this idea and choose the right anti-bias method."

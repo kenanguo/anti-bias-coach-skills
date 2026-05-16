@@ -1,0 +1,4 @@
+interface:
+  display_name: "反方教练：快速三击"
+  short_description: "30-second adversarial pushback"
+  default_prompt: "Use $counter to challenge this idea in three sharp attacks."

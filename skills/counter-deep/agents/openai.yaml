@@ -1,0 +1,4 @@
+interface:
+  display_name: "反方教练：对手视角"
+  short_description: "Persona-based adversarial review"
+  default_prompt: "Use $counter-deep to pressure-test this idea from a concrete opponent persona."

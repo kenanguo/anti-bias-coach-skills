@@ -1,0 +1,4 @@
+interface:
+  display_name: "反方教练：红蓝队"
+  short_description: "Multi-agent adversarial review"
+  default_prompt: "Use $red-blue-decision-review to pressure-test this decision before I commit."

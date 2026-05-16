@@ -1,0 +1,4 @@
+interface:
+  display_name: "反方教练：失败预演"
+  short_description: "Failure rehearsal for big decisions"
+  default_prompt: "Use $premortem to rehearse how this decision could fail before I commit."
