@@ -55,12 +55,18 @@ The core idea: don't ask an AI to politely "consider risks." Give it a structure
 
 ## 安装
 
+**Cola：**
+```bash
+cp -R skills/* ~/.cola/skills/
+```
+
+**Codex：**
 ```bash
 mkdir -p ~/.codex/skills
 cp -R skills/* ~/.codex/skills/
 ```
 
-重启 Codex 即可。
+重启对应 Agent 即可。
 
 ---
 
