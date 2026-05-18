@@ -1,6 +1,6 @@
 ---
 name: counter
-description: Use when the user asks for 反方教练 quick mode, 快速三击, quick adversarial pushback, or a light challenge on an idea, decision, plan, draft, assumption, or claim using phrases like 反方一下, counter, 压测一下, 挑战这个想法, 找问题, devil's advocate, 质疑一下, or 反驳我.
+description: Use when the user asks for 反方教练 quick mode, 快速三击, quick adversarial pushback, or a light challenge on an idea, decision, plan, draft, assumption, or claim using phrases like 反方一下, counter, 压测一下, 挑战这个想法, 找问题, devil's advocate, 质疑一下, or 反驳我, 泼冷水, or 帮我泼个冷水.
 ---
 
 # 反方一击 (Counter)

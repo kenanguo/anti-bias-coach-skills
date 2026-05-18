@@ -1,6 +1,6 @@
 ---
 name: anti-bias-coach
-description: Use when the user asks for 反方教练, anti-bias coach, confirmation-bias review, 对抗确认偏误, 反方机制, pressure testing, red team, devil's advocate, 反方一下, 深度反方, 对手视角, 失败预演, 翻车预演, 提前复盘, 事前验尸, or 红蓝队对抗 but does not specify which adversarial method to use.
+description: Use when the user asks for 反方教练, anti-bias coach, confirmation-bias review, 对抗确认偏误, 反方机制, pressure testing, red team, devil's advocate, 反方一下, 深度反方, 对手视角, 失败预演, 翻车预演, 提前复盘, 事前回溯, or 泼冷水, 红蓝队对抗 but does not specify which adversarial method to use.
 ---
 
 # 反方教练 (Anti Bias Coach)
@@ -19,7 +19,7 @@ Use the lightest method that can change the user's next action:
 |---|---|---|
 | "反方一下", "质疑一下", quick challenge | 快速三击 | `counter` |
 | "深度反方", "对手视角", "扮演某竞品攻击我" | 对手视角 | `counter-deep` |
-| "失败预演", "翻车预演", "提前复盘", "事前验尸", major irreversible decision | 失败预演 | `premortem` |
+| "失败预演", "翻车预演", "提前复盘", "事前回溯", major irreversible decision | 失败预演 | `premortem` |
 | "红蓝队", "多 Agent", partner disagreement, high-stakes strategy | 红蓝队对抗 | `red-blue-decision-review` |
 
 If the user says only "反方教练" or "帮我压测一下", choose based on stakes:
