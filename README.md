@@ -1,33 +1,55 @@
-# Anti-Bias Coach Skills
+# 反方教练 (Anti-Bias Coach Skills)
 
-反方教练是一组用于对抗确认偏误的 Agent Skills。它把一个想法、决策、产品方向或创业判断放进反方机制里，帮助你更早看到脆弱假设、真实阻力和失败路径。
+你做决策的时候，AI 默认讨好你。"这个想法不错，不过再看看风险"——这话等于没说。
 
-The core idea: do not ask an AI to politely "consider risks". Give it a structured adversarial role so it can pressure-test the decision.
+反方教练用结构化反方机制替代泛泛的"泼冷水"。不是让 AI 客气地列几个风险——是给它一个明确的对立角色，用固定格式锁死输出，让它真正攻击你的盲区。
 
-## What's Included
+The core idea: don't ask an AI to politely "consider risks." Give it a structured adversarial role so it can pressure-test the decision.
 
-This repository contains one router skill and four method skills:
+---
 
-| Human name | Skill folder | Use when |
+## 四层工具
+
+一句触发：`反方教练，帮我压测一下`。路由自动判断用哪种深度。
+
+| 工具 | 触发场景 | 做什么 |
 |---|---|---|
-| 反方教练 | `anti-bias-coach` | You want one easy entry point and want the agent to choose the right mode |
-| 反方教练：快速三击 | `counter` | You want a quick, sharp challenge to an idea or claim |
-| 反方教练：对手视角 | `counter-deep` | You want a concrete opposing persona, such as an incumbent, failed predecessor, skeptical investor, or future acquirer |
-| 反方教练：失败预演 | `premortem` | You want to rehearse how a major decision could fail before committing |
-| 反方教练：红蓝队 | `red-blue-decision-review` | You want a heavier red team / blue team / judge process, including multi-agent use when available |
+| **快速三击** `counter` | 随口一个想法、写完一段文案 | 30 秒三击：点出最脆弱的核心假设 → 暴露你没意识到的真实阻力 → 用过去时描述具体死法。强制结束，不给建议。 |
+| **对手视角** `counter-deep` | 产品方案、商业判断、BP 打磨 | AI 扮演一个具体对手，带 MAP 三要素——**动机**（他凭什么希望你失败）、**知识不对称**（他知道你不知道什么）、**立场**（只代表一种利益，不中立）。五个对手原型可选：在位巨头、失败的前辈、被威胁的现任者、看空的资本方、未来的收购方。 |
+| **失败回溯** `premortem` | 辞职、签合伙人、大额合同、重大转向 | 不是问"这件事可能失败吗"（AI 会辩护），而是说"它已经失败了，反推为什么"（AI 只能分析）。三角色反推——离开的员工写 Glassdoor 评论 → Pass 的 VC 写内部备忘录 → 流失的客户写用户调研原话。最后强制"今日行动追问"。 |
+| **红蓝队** `red-blue-decision-review` | 高 stakes 策略、多 agent 可用时 | 红队攻击，蓝队辩护，裁判裁决。支持多 agent 并行。 |
 
-## Example Prompts
+频次越高，工具越轻；决策越重，工具越深。
+
+---
+
+## 设计上做了三件泼冷水没做的事
+
+**① 心智重置协议**
+
+触发瞬间强制切换状态："忘掉协作姿态、忘掉附和默认、拒绝软化倾向。任何'但是这个想法也有价值'都是失败信号。"不是建议，是指令。
+
+**② 固定格式锁死输出**
+
+每步有字数限制、有禁止词汇清单（"可能""或许""公平地说""另一方面"）、有强制结束句。不给 AI 软化空间。
+
+**③ 预判了逃避模式**
+
+当你说"你不懂我的情况""这个对手不理解我"时，skill 里有应对剧本——不是跟你辩论，是让你自己分辨：到底是 AI 问错了，还是你在保护想法不被检验。
+
+---
+
+## 示例
 
 ```text
 反方教练，帮我压测这个想法
 反方教练，快速反方一下
 反方教练，用对手视角深挖
 反方教练，失败预演一下
-反方教练，提前复盘一下
 反方教练，红蓝队对抗
 ```
 
-English prompts also work:
+English:
 
 ```text
 Use anti-bias coach to pressure-test this strategy.
@@ -37,40 +59,27 @@ Run a failure rehearsal before I commit.
 Run a red team / blue team review.
 ```
 
-## Installation
+---
 
-For Codex, copy the skill folders into your Codex skills directory:
+## 安装
 
 ```bash
 mkdir -p ~/.codex/skills
 cp -R skills/* ~/.codex/skills/
 ```
 
-Restart Codex so the new skills are picked up.
+重启 Codex 即可。
 
-## How To Choose a Mode
+---
 
-Use the router first:
-
-```text
-反方教练，帮我压测一下
-```
-
-The router will choose the lightest method that can change the next action:
-
-- Low-stakes or casual idea: quick counter.
-- Concrete product or business plan: opponent view.
-- Irreversible commitment: failure rehearsal.
-- High-stakes strategy or explicit multi-agent request: red/blue review.
-
-## Design Principles
+## 设计原则
 
 - Fight confirmation bias, not the person.
 - Attack assumptions, mechanisms, evidence gaps, and future failure paths.
 - Do not invent facts. Missing evidence should be named as evidence debt.
 - Do not soften the adversarial pass with reassurance.
-- End with a concrete question, evidence need, or next test.
+- End with a concrete question or next action.
 
-## License
+---
 
 MIT
