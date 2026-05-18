@@ -1,6 +1,6 @@
 ---
 name: anti-bias-coach
-description: Use when the user asks for 反方教练, anti-bias coach, confirmation-bias review, 对抗确认偏误, 反方机制, pressure testing, red team, devil's advocate, 反方一下, 深度反方, 对手视角, 失败预演, 翻车预演, 提前复盘, 事前回溯, or 泼冷水, 红蓝队对抗 but does not specify which adversarial method to use.
+description: Use when the user asks for 反方教练, anti-bias coach, 帮我压测一下, 帮我挑挑刺, 给我泼泼冷水, confirmation-bias review, 对抗确认偏误, 反方机制, pressure testing, red team, devil's advocate, 反方一下, 深度反方, 对手视角, 失败预演, 翻车预演, 提前复盘, 事前回溯, 泼冷水, 红蓝队对抗 but does not specify which adversarial method to use.
 ---
 
 # 反方教练 (Anti Bias Coach)

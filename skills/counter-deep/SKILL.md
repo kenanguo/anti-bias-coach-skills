@@ -1,6 +1,6 @@
 ---
 name: counter-deep
-description: Use when the user asks for 反方教练 opponent mode, 对手视角, deep adversarial pushback, or a specific opposing persona on an idea, business plan, product direction, or strategy using phrases like 深度反方, 扮演 X 攻击我, 找个对手压测, deep counter, adversarial roleplay, or 让某竞品 CEO 反驳我.
+description: Use when the user asks for 反方教练 opponent mode, 对手视角, deep adversarial pushback, or a specific opposing persona on an idea, business plan, product direction, or strategy using phrases like 深度反方, 如果我是你的竞争对手你怎么攻击我, 扮演个对手来攻击我, 扮演 X 攻击我, 找个对手压测, or 让某竞品 CEO 反驳我.
 ---
 
 # 深度反方辩论 (Counter Deep)

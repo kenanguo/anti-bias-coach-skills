@@ -55,18 +55,19 @@ The core idea: don't ask an AI to politely "consider risks." Give it a structure
 
 ## 安装
 
-**Cola：**
-```bash
-cp -R skills/* ~/.cola/skills/
-```
+在 Cola 或 Codex 对话中说：
 
-**Codex：**
-```bash
-mkdir -p ~/.codex/skills
-cp -R skills/* ~/.codex/skills/
-```
+> 安装 anti-bias-coach-skills
 
-重启对应 Agent 即可。
+或手动：
+
+```bash
+git clone https://github.com/kenanguo/anti-bias-coach-skills.git
+# Cola
+cp -R anti-bias-coach-skills/skills/* ~/.cola/skills/
+# Codex
+cp -R anti-bias-coach-skills/skills/* ~/.codex/skills/
+```
 
 ---
 

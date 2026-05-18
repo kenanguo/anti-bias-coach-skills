@@ -1,6 +1,6 @@
 ---
 name: premortem
-description: Use when the user asks for 反方教练 failure rehearsal mode, 失败预演, 翻车预演, 提前复盘, 失败倒推, 最坏情况演练, 如果这事黄了, 如果最后失败, 18个月后失败, 决策失败回溯, 事前回溯, 失败回看, 预演失败, 假设失败了, or premortem for a major irreversible decision such as quitting to start a company, signing a co-founder, accepting funding, making a pivot, or signing a large contract.
+description: Use when the user asks for 反方教练 failure rehearsal mode, 帮我失败预演一下, 假设这事已经黄了帮我反推原因, 失败预演, 翻车预演, 提前复盘, 失败倒推, 最坏情况演练, 如果这事黄了, 如果最后失败, 18个月后失败, 决策失败回溯, 事前回溯, 失败回看, 预演失败, 假设失败了, or premortem for a major irreversible decision such as quitting to start a company, signing a co-founder, accepting funding, making a pivot, or signing a large contract.
 ---
 
 # 失败预演 / Pre-mortem
