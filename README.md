@@ -55,7 +55,7 @@ The core idea: don't ask an AI to politely "consider risks." Give it a structure
 
 ## 安装
 
-在 Cola 或 Codex 对话中说：
+在 Claude 或 Codex 或 Cola 对话中说：
 
 > 安装 anti-bias-coach-skills
 
