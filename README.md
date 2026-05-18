@@ -23,7 +23,7 @@ The core idea: don't ask an AI to politely "consider risks." Give it a structure
 
 ---
 
-## 设计上做了三件泼冷水没做的事
+## 三个硬设计
 
 **① 心智重置协议**
 
