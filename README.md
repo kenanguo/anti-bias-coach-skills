@@ -39,24 +39,16 @@ The core idea: don't ask an AI to politely "consider risks." Give it a structure
 
 ---
 
-## 示例
+## 试试这么说
 
 ```text
-反方教练，帮我压测这个想法
-反方教练，快速反方一下
-反方教练，用对手视角深挖
-反方教练，失败预演一下
-反方教练，红蓝队对抗
-```
-
-English:
-
-```text
-Use anti-bias coach to pressure-test this strategy.
-Run a quick counter on this claim.
-Use an incumbent competitor persona to attack this product idea.
-Run a failure rehearsal before I commit.
-Run a red team / blue team review.
+帮我压测一下
+给我泼泼冷水
+帮我挑挑刺
+如果我是你的竞争对手，你怎么攻击我这个方案
+帮我失败预演一下
+假设这事已经黄了，帮我反推原因
+红蓝队来一轮
 ```
 
 ---
